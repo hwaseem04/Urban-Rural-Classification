@@ -1,10 +1,11 @@
 # Urban-Rural-Classification
+Streamlit App Link: [click here](https://hwaseem04-urban-rural-classification-app-urj25b.streamlit.app/)
 
-## Why?
+## Introduction
 Wanted to try out Streamlit. So I decided to implement a Rural-Urban Scene Classifier. Train and validation data downloaded from [Kaggle](https://www.kaggle.com/datasets/dansbecker/urban-and-rural-photos). Manually downloaded test data from [pexels.com](https://www.pexels.com/).
 
 ## How to use
-* Refer to this demo: 
+* Refer to the demo [in youtube](https://youtu.be/vcRnDZyhBuY).
 
 ![demo video](demo.gif)
 
@@ -14,10 +15,10 @@ Wanted to try out Streamlit. So I decided to implement a Rural-Urban Scene Class
 * **Upload only rural/urban scene images**.
 
 ## Implementation
-* Picked up `Inception-v3` Architecture.
-* Finetuned it with urban-rural scene images by modifying the final classfifier layer.
+* Picked up `Inception-v3` Architecture for transfer learning.
+* Finetuned it with urban-rural scene images by modifying the final classifier layer.
 * Impressively, even after few epoch, able to get both train and validation accuracy to be 100%. Quite overfitted, will have to add more noise in augmentation step. But so far it predicts well.
-
+* You can refer to my [Jupyter file](Urban-Rural-Scene-classification.ipynb) for implementation of transfer learning.
 
 ## Improvements
 * Incase certain images are misclassified please raise an issue along with the image.
